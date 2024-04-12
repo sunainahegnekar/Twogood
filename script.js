@@ -54,6 +54,7 @@ function loadingAnimation(){
     })
 }
 
+
 loadingAnimation()
 
 document.addEventListener("mousemove",function(dets){
@@ -133,17 +134,47 @@ ScrollTrigger.refresh();
 
 locomotiveAnimation()
 
-// gsap.to("#nav-1 svg",{
 
-//         transform:"translateY(-100%)",
-//         ScrollTrigger:{
-//         trigger:"#page1",
-//         scroller:"#main",
+gsap.to("#nav-1 svg , #nav-2 #links , #icons",{
+        y:-180,
+        // transform:"translateY(-100%)",
+        scrollTrigger:{
+        trigger:"#page1",
+        scroller:"#main",
+        markers:true,
+        start:"top 0",
+        end:"top -5%",
+        scrub:true, 
+        
+    }
+
+})
+
+// sap.to(" #links",{
+//     y:-180,
+//     transform:"translateY(-100%)",
+//     scrollTrigger:{
+//     trigger:"#page1",
+//     scroller:"#main",
+//     markers:true,
+//     start:"top 0",
+//     end:"top -5%",
+//     scrub:true, 
+    
+// }
+
+// })
+
+
+    
+// // gsap.to("#nav svg",{
+// //     y:-180,
+// //     ScrollTrigger:{
+// //         trigger:"#page1",
+// //         scroller:"#main",
 //         markers:true,
 //         start:"top 0",
-//         end:"top -5%",
 //         scrub:true,
-        
-        
+
 //     }
-    
+// })
