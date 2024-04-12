@@ -199,6 +199,7 @@ padding-top: 24vh;
     justify-content: space-between;
     align-items: flex-start;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 #nav-2{
@@ -239,11 +240,13 @@ a{
 
 
 #nav-1{
-    display: block;
-    /* justify-content:center;
+    display: flex;
+    justify-content:center;
     flex-direction: column;
-    gap: 100px; */
+    gap: 100px; 
+    overflow: hidden;
 }
+
 
 #logo img{
  height: 100px;
