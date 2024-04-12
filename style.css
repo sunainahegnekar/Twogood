@@ -199,7 +199,6 @@ padding-top: 24vh;
     justify-content: space-between;
     align-items: flex-start;
     text-transform: uppercase;
-    overflow: hidden;
 }
 
 #nav-2{
@@ -240,13 +239,11 @@ a{
 
 
 #nav-1{
-    display: flex;
-    justify-content:center;
+    display: block;
+    /* justify-content:center;
     flex-direction: column;
-    gap: 100px; 
-    overflow: hidden;
+    gap: 100px; */
 }
-
 
 #logo img{
  height: 100px;
@@ -309,6 +306,11 @@ h3{
 
 }
 
+#green{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 @media (max-width:600px){
 
     #page1 h1{
